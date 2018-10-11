@@ -9,9 +9,9 @@
 
 ## Assignment 1: Read and write to a file
 There's a file called "test.txt" in the files folder of this lab
-Write a node application, called `edit-file.js` in the root of your project that:
+[x] Write a node application, called `edit-file.js` in the root of your project that:
 
-  * Use the node `fs` module
+  [x] Use the node `fs` module
   * Accepts a file name as a command line parameter
   * Reads in the contents of the file specified with the CLI (test it out with that test.txt file)
   * Creates a random value (using Math.random() or maybe faker()
