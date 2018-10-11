@@ -1,11 +1,10 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) 03: Asynchronous Callbacks
 ===
 
-## Submission Instructions
-* Follow the core submission instructions
+# Overview:
 
-### Before you begin
-* You'll need to initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
+I only got through Assignment 1 but the deadline is coming up.  I didn't get to testing, but the last line in edit-file.js will call the saveFile function, which needs to call the read function to operate anyway.  If you run 'node edit-file.js' the logging should show it doing its thing.
+
 
 ## Assignment 1: Read and write to a file
 There's a file called "test.txt" in the files folder of this lab
@@ -15,10 +14,10 @@ There's a file called "test.txt" in the files folder of this lab
   [x] Accepts a file name as a command line parameter
   [x] Reads in the contents of the file specified with the CLI (test it out with that test.txt file)
   [x] Creates a random value (using Math.random() or maybe faker()
-  * Puts that random value into the file
-  * Save the file
-  * Re-Open and read the file contents
-  * Emit a `console.log()` that shows the contents before and after the operations are completed.
+  [x] Puts that random value into the file
+  [x] Save the file
+  [x] Re-Open and read the file contents
+  [x] Emit a `console.log()` that shows the contents before and after the operations are completed.
 
 ##### Strech Goal: Modularize and test
 * Move the edit-file.js file into the lib folder
