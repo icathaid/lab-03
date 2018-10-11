@@ -6,6 +6,7 @@
 I only got through Assignment 1 but the deadline is coming up.  I didn't get to testing, but the last line in edit-file.js will call the saveFile function, which needs to call the read function to operate anyway.  If you run 'node edit-file.js' the logging should show it doing its thing.
 
 
+
 ## Assignment 1: Read and write to a file
 There's a file called "test.txt" in the files folder of this lab
 [x] Write a node application, called `edit-file.js` in the root of your project that:
@@ -65,3 +66,4 @@ In the files folder, you'll see 3 files: `1.txt, 2.txt, 3.txt`
 
 ##  Documentation
 In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+.
