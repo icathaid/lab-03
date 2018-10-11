@@ -3,10 +3,12 @@
 module.exports = exports = {};
 
 exports.readFile = (file, cb) => {
+  console.log(file);
   if( file.match(/bad/i) ) {
-    cb('Invalid File');
+    cb('invalid file', file);
   }
   else {
-    cb(undefined, new Buffer('File Contents'));
+    let contents = file.toString().trim();
+    cb(undefined, new Buffer(contents));
   }
 };

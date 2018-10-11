@@ -5,8 +5,13 @@
 
 I only got through Assignment 1 but the deadline is coming up.  I didn't get to testing, but the last line in edit-file.js will call the saveFile function, which needs to call the read function to operate anyway.  If you run 'node edit-file.js' the logging should show it doing its thing.
 
+## Lingering Questions:
 
-## Assignment 1: Read and write to a file
+I'm stuck on the jest throwing errors part.  I'm assuming that when reader or index throw an error, it kills jest, which is why the error is coming back undefined.  (running node index.js will return a defined error) but I don't know what code the expect should execute, or how to make it do so
+
+
+
+### Assignment 1: Read and write to a file
 There's a file called "test.txt" in the files folder of this lab
 [x] Write a node application, called `edit-file.js` in the root of your project that:
 
@@ -30,12 +35,12 @@ There's a file called "test.txt" in the files folder of this lab
 * Write tests to ensure that the reader function correctly resolves mapped string data for an array of file paths
 * Use a mocked version of the `fs` module so that you don't actually write to files during your test.
 
-## Assignment 2: Read Multiple Files, In Order
-In your lab folder, you'll find an `index.js` file that calls on a library file: `lib/reader.js`
-In the files folder, you'll see 3 files: `1.txt, 2.txt, 3.txt`
-* The index.file should accept filenames as parameters from the command line and then invoke the reader function with an error first callback to read in the 3 files, and `console.log()` their contents (the `data`)
-* The reader library should be reading in the files given to it in order and returning back an array of contents from those files.
-* You should also be able to run npm test and have the reader test file run against that same library to make the same assertion.
+### Assignment 2: Read Multiple Files, In Order
+- In your lab folder, you'll find an `index.js` file that calls on a library file: `lib/reader.js`
+- In the files folder, you'll see 3 files: `1.txt, 2.txt, 3.txt`
+- The index.file should accept filenames as parameters from the command line and then invoke the reader function with an error first callback to read in the 3 files, and `console.log()` their contents (the `data`)
+- The reader library should be reading in the files given to it in order and returning back an array of contents from those files.
+- You should also be able to run npm test and have the reader test file run against that same library to make the same assertion.
 
 **Task 1: Fix the broken code**
 * None of the above actually works.
